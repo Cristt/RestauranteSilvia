@@ -1,0 +1,14 @@
+legend,label,p{
+    font-style: normal;
+    font-weight: bold;
+}
+
+P{
+    text-align: right;
+    width: 300px;
+}
+
+#imgRestaurante{
+    width: 1580px;
+    height: 211.6px;
+}
