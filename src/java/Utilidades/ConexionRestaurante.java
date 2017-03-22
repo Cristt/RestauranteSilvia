@@ -5,8 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionRestaurante {
-//Creamos un objeto privado (para que nadie puediese acceder a la conexion), GLOBAL
-
     private static Connection conexion;
 
     public static Connection conexionRestaurante() throws ClassNotFoundException, SQLException {

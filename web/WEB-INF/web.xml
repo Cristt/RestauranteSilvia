@@ -22,39 +22,39 @@
     -->
     <servlet>
         <servlet-name>CreaSession</servlet-name>
-        <servlet-class>ejemploServlet.CreaSession</servlet-class>
+        <servlet-class>controladoresServlet.CreaSession</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>VerSession</servlet-name>
-        <servlet-class>ejemploServlet.VerSession</servlet-class>
+        <servlet-class>controladoresServlet.VerSession</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>FormularioServletCamarero</servlet-name>
-        <servlet-class>ejemploServlet.FormularioServletCamarero</servlet-class>
+        <servlet-class>controladoresServlet.FormularioServletCamarero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletCamarero</servlet-name>
-        <servlet-class>ejemploServlet.mostrarServletCamarero</servlet-class>
+        <servlet-class>controladoresServlet.mostrarServletCamarero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>FormularioServletCocinero</servlet-name>
-        <servlet-class>ejemploServlet.FormularioServletCocinero</servlet-class>
+        <servlet-class>controladoresServlet.FormularioServletCocinero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletCocinero</servlet-name>
-        <servlet-class>ejemploServlet.mostrarServletCocinero</servlet-class>
+        <servlet-class>controladoresServlet.mostrarServletCocinero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LogRestaurante</servlet-name>
-        <servlet-class>ejemploServlet.LogRestaurante</servlet-class>
+        <servlet-class>controladoresServlet.LogRestaurante</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>FormularioServletAdministrador</servlet-name>
-        <servlet-class>ejemploServlet.FormularioServletAdministrador</servlet-class>
+        <servlet-class>controladoresServlet.FormularioServletAdministrador</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletAdministrador</servlet-name>
-        <servlet-class>ejemploServlet.mostrarServletAdministrador</servlet-class>
+        <servlet-class>controladoresServlet.mostrarServletAdministrador</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CreaSession</servlet-name>
