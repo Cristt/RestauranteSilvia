@@ -25,7 +25,7 @@ public class daoCocinero {
 
     }
     
-    public static void procesarPeticionCocinero(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, IOException {
+    /**public static void procesarPeticionCocinero(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, IOException {
 
         Cocinero cooker = new Cocinero();
         cooker.setIdCocinero(Integer.parseInt(request.getParameter("idcocinero")));
@@ -35,7 +35,7 @@ public class daoCocinero {
         insertarCocinero(cooker.getIdCocinero(), cooker.getNombre(), cooker.getApellido());
         response.sendRedirect("/RestauranteSilvia/mostrarServletCocinero");
 
-    }
+    }**/
 
     public static ResultSet verCocineros() throws ClassNotFoundException, SQLException {
 
