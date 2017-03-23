@@ -1,6 +1,8 @@
 package controladoresServlet;
 
 import Utilidades.ConexionRestaurante;
+import bo.camarero.restaurante.BoCamarero;
+import dao.camarero.restaurante.DaoCamarero;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -13,14 +15,41 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 //@WebServlet(name="FormularioServletCamarero", urlPatterns={"/Restaurante/formularioServletCamarero"})
-public class FormularioServletCocinero extends HttpServlet {
+public class ControladorServletCamarero extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, ClassNotFoundException, SQLException {
-
-           response.sendRedirect("/RestauranteSilvia/mostrarServletCocinero");
+        
+        //Declaramos el mismo user y pass que en LogRestaurante
+        HttpSession misession = (HttpSession) request.getSession();
+        boolean log = (boolean) misession.getAttribute("ok");
+        
+        if (log=true){
+        
+       //BoCamarero=BoCamarero.procesarInsertarpeticionCamarero
+               
+        }else{
+        
+            response.sendRedirect("/RestauranteSilvia/login.html");
+            
+        }
+        
+       /* COMENTADO FINAL VIERNES 
+        String usuario_logeado=(String) misession.getAttribute("login_usuario");
+        String usuario_pass=(String) misession.getAttribute("login_password");
+        
+        //response.sendRedirect("/RestauranteSilvia/mostrarServletCamarero");  
+        //Comprobar que no se ha caducado la sesion
+        if (usuario_logeado.contains("user")&& usuario_pass.contains("pass")){
+            daoCamarero.procesarPeticionCamarero(request, response);
+                    }else{
+            response.sendRedirect("/RestauranteSilvia/login.html");
+            ;}*/
+        
+        
                 //Statement sentencia = null;
                 //Connection conexion;
                 //recuperamos los parametros del form, y los guardamos en variables
@@ -72,9 +101,9 @@ public class FormularioServletCocinero extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(FormularioServletCocinero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ControladorServletCamarero.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(FormularioServletCocinero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ControladorServletCamarero.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -84,9 +113,9 @@ public class FormularioServletCocinero extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(FormularioServletCocinero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ControladorServletCamarero.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(FormularioServletCocinero.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ControladorServletCamarero.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

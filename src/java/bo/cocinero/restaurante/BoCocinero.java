@@ -5,7 +5,7 @@
  */
 package bo.cocinero.restaurante;
 
-import static dao.cocinero.restaurante.daoCocinero.insertarCocinero;
+import static dao.cocinero.restaurante.DaoCocinero.insertarCocinero;
 import entidades.Cocinero;
 import java.io.IOException;
 import java.sql.SQLException;

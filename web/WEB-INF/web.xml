@@ -30,19 +30,19 @@
     </servlet>
     <servlet>
         <servlet-name>FormularioServletCamarero</servlet-name>
-        <servlet-class>controladoresServlet.FormularioServletCamarero</servlet-class>
+        <servlet-class>controladoresServlet.ControladorServletCamarero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletCamarero</servlet-name>
-        <servlet-class>controladoresServlet.mostrarServletCamarero</servlet-class>
+        <servlet-class>controladoresServlet.MostrarServletCamarero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>FormularioServletCocinero</servlet-name>
-        <servlet-class>controladoresServlet.FormularioServletCocinero</servlet-class>
+        <servlet-class>controladoresServlet.ControladorServletCocinero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletCocinero</servlet-name>
-        <servlet-class>controladoresServlet.mostrarServletCocinero</servlet-class>
+        <servlet-class>controladoresServlet.MostrarServletCocinero</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>LogRestaurante</servlet-name>
@@ -50,11 +50,11 @@
     </servlet>
     <servlet>
         <servlet-name>FormularioServletAdministrador</servlet-name>
-        <servlet-class>controladoresServlet.FormularioServletAdministrador</servlet-class>
+        <servlet-class>controladoresServlet.ControladorServletAdministrador</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>mostrarServletAdministrador</servlet-name>
-        <servlet-class>controladoresServlet.mostrarServletAdministrador</servlet-class>
+        <servlet-class>controladoresServlet.MostrarServletAdministrador</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CreaSession</servlet-name>
