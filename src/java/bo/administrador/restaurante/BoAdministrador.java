@@ -12,10 +12,6 @@ import java.sql.SQLException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author admin
- */
 public class BoAdministrador {
         public static void procesarInsertarPeticionAdministrador(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, IOException {
 

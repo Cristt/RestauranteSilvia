@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/bo/cocinero/restaurante/BoCocinero.java</file>
-            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/Utilidades/ConexionRestaurante.java</file>
-            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/dao/cocinero/restaurante/daoCocinero.java</file>
-            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/Utilidades/VerificarLogin.java</file>
+            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/bo/administrador/restaurante/BoAdministrador.java</file>
+            <file>file:/C:/Users/admin/Desktop/RestauranteSilvia/src/java/bo/camarero/restaurante/BoCamarero.java</file>
         </group>
     </open-files>
 </project-private>
