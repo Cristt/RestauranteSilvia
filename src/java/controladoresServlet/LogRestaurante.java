@@ -22,7 +22,7 @@ public class LogRestaurante extends HttpServlet {
         String user_login = request.getParameter("login_usuario"); //Esta es la clave que devuelve un valor
         String pass_login = request.getParameter("login_password");
 
-        /* COMENTADO PARA HACER EL VERIFICAR LOGIN 
+         /*COMENTADO PARA HACER EL VERIFICAR LOGIN 
          HttpSession sesion_login=request.getSession();
          //a traves de los atributos usuario y password_sesion en el objeto sesion_login
          //login_usuario y login_password contienen implicitos los valores de "root" , "root", aunque cambien su valor
@@ -47,15 +47,15 @@ public class LogRestaurante extends HttpServlet {
             System.out.println("Valor " + verificarUsuario);
         }
 
-        /* BORRADO PARA HACER EL VERIFICAR LOGIN
+        /**
          //Aqui compruebo los valores recibidos del formulario (los que el usuario va a meter)
          //el valor puede ser user, o pass
-         if(user_login.contains("root") && pass_login.contains("root")){
-         response.sendRedirect("/RestauranteSilvia/registroCamarero.html");
+         if(user_login.contains("paco") && pass_login.contains("porras")){
+         response.sendRedirect("/InstitutoWeb/index.htm");
          }else{
-         response.sendRedirect("/RestauranteSilvia/login.html");
-         }*/
-        /*response.setContentType("text/html;charset=UTF-8");
+         response.sendRedirect("/InstitutoWeb/indice.html");
+         }
+        response.setContentType("text/html;charset=UTF-8");
          try (PrintWriter out = response.getWriter()) {
          out.println("<!DOCTYPE html>");
          out.println("<html>");
@@ -67,7 +67,7 @@ public class LogRestaurante extends HttpServlet {
          out.println("</body>");
          out.println("</html>");
          }
-         */
+         **/
     }
 
     @Override

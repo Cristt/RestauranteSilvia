@@ -12,7 +12,7 @@ import java.sql.Statement;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class daoCamarero {
+public class DaoCamarero {
 
     public static void insertarCamarero(String idcamarero, String nombre, String apellido, String especialidad) throws SQLException, ClassNotFoundException {
 
